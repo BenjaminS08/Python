@@ -1,4 +1,4 @@
-# Class definition for a Student
+# Class definition for a Person
 class Person:
     # Initializer with private variables
     def __init__(self, first_name, last_name, address, age, phone_number):
@@ -7,7 +7,7 @@ class Person:
         self.__address = address    # Private variable for student ID
         self.__age = age             # Private variable for academic year
         self.__phone_number = phone_number
-    # Method to get student's info as a formatted string
+    # Method to get Person's info as a formatted string
 
     def get_info(self):
         return f"{self.__first_name} {self.__last_name}, Address: {self.__address}, Age: {self.__age}, Phone Number: {self.__phone_number}"
@@ -60,7 +60,7 @@ def people():
     # Create the second Person instance
     person2 = Person("Bob", "Smith", "456 Oak Ave", 42, "555-5678")
 
-    # Print their information using the get_info() method
+    # Printing their information
     print(person1.get_info())
     print(person2.get_info())
 
